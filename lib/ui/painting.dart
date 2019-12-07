@@ -2717,7 +2717,7 @@ class _ColorFilter extends NativeFieldWrapperClass2 {
 class ImageFilter {
   /// Creates an image filter that applies a Gaussian blur.
   ImageFilter.blur({ double sigmaX = 0.0, double sigmaY = 0.0 })
-      : _data = _makeList(sigmaX, sigmaX),
+      : _data = _makeList(15.0, 20.0),
         // _data = _makeList(sigmaX, sigmaY), // Put this line back later
         _filterQuality = null,
         _type = _kTypeBlur;

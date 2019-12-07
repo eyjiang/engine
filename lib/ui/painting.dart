@@ -2813,7 +2813,6 @@ class _ImageFilter extends NativeFieldWrapperClass2 {
   _ImageFilter.blur(this.creator)
     : assert(creator != null),
       assert(creator._type == ImageFilter._kTypeBlur) {
-    print("ImageBlur called");
     _constructor();
     _initBlur(creator._data[0], creator._data[1]);
   }
